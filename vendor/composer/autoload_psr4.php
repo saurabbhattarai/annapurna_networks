@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'voku\\' => array($vendorDir . '/voku/portable-ascii/src/voku'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
+    'Tests\\' => array($baseDir . '/tests'),
     'Termwind\\' => array($vendorDir . '/nunomaduro/termwind/src'),
     'Symfony\\Polyfill\\Uuid\\' => array($vendorDir . '/symfony/polyfill-uuid'),
     'Symfony\\Polyfill\\Php85\\' => array($vendorDir . '/symfony/polyfill-php85'),
@@ -74,11 +75,11 @@ return array(
     'Doctrine\\Inflector\\' => array($vendorDir . '/doctrine/inflector/src'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/src'),
     'Dflydev\\DotAccessData\\' => array($vendorDir . '/dflydev/dot-access-data/src'),
-    'Database\\Seeders\\' => array($vendorDir . '/laravel/laravel/database/seeders'),
-    'Database\\Factories\\' => array($vendorDir . '/laravel/laravel/database/factories'),
+    'Database\\Seeders\\' => array($baseDir . '/database/seeders', $vendorDir . '/laravel/laravel/database/seeders'),
+    'Database\\Factories\\' => array($baseDir . '/database/factories', $vendorDir . '/laravel/laravel/database/factories'),
     'Cron\\' => array($vendorDir . '/dragonmantank/cron-expression/src/Cron'),
     'Carbon\\Doctrine\\' => array($vendorDir . '/carbonphp/carbon-doctrine-types/src/Carbon/Doctrine'),
     'Carbon\\' => array($vendorDir . '/nesbot/carbon/src/Carbon'),
     'Brick\\Math\\' => array($vendorDir . '/brick/math/src'),
-    'App\\' => array($vendorDir . '/laravel/laravel/app'),
+    'App\\' => array($baseDir . '/app', $vendorDir . '/laravel/laravel/app'),
 );
